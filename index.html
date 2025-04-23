@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -74,31 +75,6 @@
     .form-section h2 {
       color: #28a745;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    label {
-      margin-top: 15px;
-      font-weight: bold;
-    }
-    input, textarea {
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1em;
-    }
-    button[type="submit"] {
-      margin-top: 20px;
-      background-color: #007BFF;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1.1em;
-      cursor: pointer;
-    }
     footer {
       background-color: #333;
       color: white;
@@ -139,7 +115,7 @@
       <li>その結果、仲介手数料をゼロにするのは困難。</li>
     </ul>
     <div class="image-section">
-      <img src="/mnt/data/2.png" alt="一般的な不動産会社の仕組み">
+      <img src="2.png" alt="一般的な不動産会社の仕組み">
     </div>
   </div>
 
@@ -150,24 +126,13 @@
       <li>物件オーナーの広告費のみで収益化＝仲介手数料ゼロが実現。</li>
     </ul>
     <div class="image-section">
-      <img src="/mnt/data/3.png" alt="ゼロ円仲介.comの仕組み">
+      <img src="3.png" alt="ゼロ円仲介.comの仕組み">
     </div>
   </div>
 
   <div class="form-section animate__animated animate__fadeInUp">
     <h2>お問い合わせ</h2>
-    <form action="#" method="POST">
-      <label for="name">お名前</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">メールアドレス</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">お問い合わせ内容</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <button type="submit">送信する</button>
-    </form>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSey0AQqFPTCONS8QSikfaWzC9kCcpANG-74lajKQUkB-URCqg/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
   </div>
 </div>
 
@@ -175,7 +140,6 @@
   <p>&copy; 2025 ゼロ円仲介.com</p>
 </footer>
 
-<!-- アニメーションのトリガー（スクロール時） -->
 <script>
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
