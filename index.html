@@ -1,131 +1,195 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ゼロ円仲介.comでは、仲介手数料がゼロ円の不動産サービスを提供しています。お気軽にお問い合わせください。">
-  <title>ゼロ円仲介.com | 仲介手数料ゼロ円の不動産サービス</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ゼロ円仲介.com | ランディングページ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
-    /* 基本のリセット */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
     }
     header {
-      background-color: #0056b3;
+      background-color: #FF7F27;
       color: white;
-      padding: 20px 0;
+      padding: 40px 20px;
       text-align: center;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.2em;
+      margin-bottom: 10px;
     }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
-    nav ul li {
-      display: inline;
-      margin-right: 20px;
-    }
-    nav ul li a {
+    .line-btn {
+      background-color: #06C755;
       color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
-    .hero {
-      background-image: url('hero.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .hero h2 {
-      font-size: 3rem;
-    }
-    .cta {
-      background-color: #ff6600;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .cta a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.5rem;
-      padding: 10px 20px;
-      background-color: #333;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      border: none;
       border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .section {
+      background-color: white;
+      margin-bottom: 30px;
+      padding: 25px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-left: 5px solid #007BFF;
+    }
+    .section h2 {
+      font-size: 1.4em;
+      color: #007BFF;
+      margin-bottom: 15px;
+    }
+    .section p {
+      margin: 0 0 10px;
+      line-height: 1.6;
+    }
+    .image-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .form-section {
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-left: 5px solid #28a745;
+    }
+    .form-section h2 {
+      color: #28a745;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+    button[type="submit"] {
+      margin-top: 20px;
+      background-color: #007BFF;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
     }
     footer {
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 10px 0;
-    }
-    /* レスポンシブ対応 */
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      .hero h2 {
-        font-size: 2rem;
-      }
-      nav ul li {
-        display: block;
-        margin: 10px 0;
-      }
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>ゼロ円仲介.com</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">会社情報</a></li>
-        <li><a href="#services">サービス</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h2>仲介手数料ゼロ円の不動産サービス</h2>
-    <p>大阪・兵庫エリアでの物件探しをサポートします。</p>
-  </section>
+<header>
+  <h1>ゼロ円仲介.comを利用するべき理由</h1>
+  <a href="https://lin.ee/あなたのLINE公式URL" class="line-btn animate__animated animate__fadeInDown">LINEで相談する</a>
+</header>
 
-  <section id="about">
-    <h2>会社情報</h2>
-    <p>ゼロ円仲介.comは、地域密着型の不動産仲介業者として、大阪・兵庫エリアでの物件探しをサポートしています。お客様のニーズに合わせた最適な物件をご提案いたします。</p>
-  </section>
+<div class="container">
+  <div class="section animate__animated animate__fadeInUp">
+    <h2>① 仲介手数料ゼロ円＋キャッシュバック！</h2>
+    <p>物件オーナー様から広告料をいただくため、お客さまからは仲介手数料をいただきません！</p>
+    <p>さらに物件に応じたお祝い金をキャッシュバック！</p>
+  </div>
 
-  <section id="services">
-    <h2>サービス</h2>
+  <div class="section animate__animated animate__fadeInUp">
+    <h2>② お客さまニーズに沿った柔軟な提案</h2>
+    <p>あらゆる種類の不動産情報データベースから、不動産のプロがお客さまのニーズに沿った物件を徹底的に探します！</p>
+  </div>
+
+  <div class="section animate__animated animate__fadeInUp">
+    <h2>③ 引越し後の生活インフラ手配もサポート</h2>
+    <p>引越し後すぐに生活をスタートできるように、電気・ガス・インターネットなどの一括手配をお手伝いします！</p>
+  </div>
+
+  <div class="section animate__animated animate__fadeInUp">
+    <h2>一般的な不動産会社の仕組み</h2>
     <ul>
-      <li>物件紹介</li>
-      <li>契約サポート</li>
-      <li>アフターサービス</li>
+      <li>店舗の家賃・従業員給与・広告費など営業コストが多く発生。</li>
+      <li>その結果、仲介手数料をゼロにするのは困難。</li>
     </ul>
-  </section>
+    <div class="image-section">
+      <img src="/mnt/data/2.png" alt="一般的な不動産会社の仕組み">
+    </div>
+  </div>
 
-  <section class="cta">
-    <h3>今すぐ無料相談を申し込む</h3>
-    <a href="#contact">お問い合わせフォームへ</a>
-  </section>
+  <div class="section animate__animated animate__fadeInUp">
+    <h2>ゼロ円仲介.comの仕組み</h2>
+    <ul>
+      <li>プロのエージェントが店舗を持たずに活動するため、営業コストを大幅に削減可能。</li>
+      <li>物件オーナーの広告費のみで収益化＝仲介手数料ゼロが実現。</li>
+    </ul>
+    <div class="image-section">
+      <img src="/mnt/data/3.png" alt="ゼロ円仲介.comの仕組み">
+    </div>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 ゼロ円仲介.com. All Rights Reserved.</p>
-  </footer>
+  <div class="form-section animate__animated animate__fadeInUp">
+    <h2>お問い合わせ</h2>
+    <form action="#" method="POST">
+      <label for="name">お名前</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">お問い合わせ内容</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">送信する</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 ゼロ円仲介.com</p>
+</footer>
+
+<!-- アニメーションのトリガー（スクロール時） -->
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate__fadeInUp');
+      }
+    });
+  });
+
+  document.querySelectorAll('.section, .form-section').forEach(el => {
+    el.classList.add('animate__animated');
+    observer.observe(el);
+  });
+</script>
+
 </body>
 </html>
