@@ -3,129 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>〇〇不動産｜地域密着の不動産仲介</title>
+  <meta name="description" content="地域密着型の不動産仲介業者。大阪・兵庫エリアでの物件探しをサポートします。">
+  <title>〇〇不動産 | 地域密着の不動産仲介</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    body {
-      font-family: "Helvetica Neue", sans-serif;
+    /* 基本のリセット */
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
       line-height: 1.6;
+      background-color: #f4f4f4;
       color: #333;
     }
     header {
-      background: #004080;
-      color: #fff;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      background-color: #0056b3;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
     }
-    nav a {
-      color: #fff;
-      margin-left: 15px;
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav ul li a {
+      color: white;
       text-decoration: none;
+      font-size: 1.2rem;
     }
     .hero {
-      background: url('https://source.unsplash.com/1600x600/?house,japan') no-repeat center center/cover;
+      background-image: url('hero.jpg');
+      background-size: cover;
+      background-position: center;
       color: white;
       text-align: center;
       padding: 100px 20px;
     }
-    .hero h1 {
-      font-size: 2.5em;
+    .hero h2 {
+      font-size: 3rem;
     }
-    .hero p {
-      font-size: 1.2em;
-    }
-    .btn {
-      background: #ff6600;
+    .cta {
+      background-color: #ff6600;
       color: white;
-      padding: 12px 25px;
-      margin-top: 20px;
-      display: inline-block;
+      padding: 20px;
+      text-align: center;
+    }
+    .cta a {
+      color: white;
       text-decoration: none;
+      font-size: 1.5rem;
+      padding: 10px 20px;
+      background-color: #333;
       border-radius: 5px;
     }
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .feature-box {
-      background: #f8f8f8;
-      padding: 20px;
-      border-radius: 8px;
-    }
     footer {
-      background: #222;
-      color: #aaa;
+      background-color: #333;
+      color: white;
       text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9em;
+      padding: 10px 0;
     }
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 1.8em;
+    /* レスポンシブ対応 */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
       }
-      nav {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+      .hero h2 {
+        font-size: 2rem;
+      }
+      nav ul li {
+        display: block;
+        margin: 10px 0;
       }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>〇〇不動産</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">会社情報</a></li>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <div><strong>〇〇不動産</strong></div>
-  <nav>
-    <a href="#features">選ばれる理由</a>
-    <a href="#properties">物件紹介</a>
-    <a href="#contact">無料相談</a>
-  </nav>
-</header>
+  <section class="hero">
+    <h2>地域密着型の不動産仲介</h2>
+    <p>大阪・兵庫エリアでの物件探しをサポートします。</p>
+  </section>
 
-<section class="hero">
-  <h1>地域密着の不動産仲介</h1>
-  <p>〇〇エリアでのお部屋探しは、私たちにお任せください。</p>
-  <a href="#contact" class="btn">無料相談はこちら</a>
-</section>
+  <section id="about">
+    <h2>会社情報</h2>
+    <p>〇〇不動産は、地域密着型の不動産仲介業者として、大阪・兵庫エリアでの物件探しをサポートしています。お客様のニーズに合わせた最適な物件をご提案いたします。</p>
+  </section>
 
-<section id="features">
-  <h2>選ばれる5つの理由</h2>
-  <div class="features">
-    <div class="feature-box">✅ 地域密着15年以上の信頼</div>
-    <div class="feature-box">✅ 毎日更新！最新物件情報</div>
-    <div class="feature-box">✅ 土日・夜間も柔軟に対応</div>
-    <div class="feature-box">✅ オンライン内見対応</div>
-    <div class="feature-box">✅ 専属スタッフが丁寧サポート</div>
-  </div>
-</section>
+  <section id="services">
+    <h2>サービス</h2>
+    <ul>
+      <li>物件紹介</li>
+      <li>契約サポート</li>
+      <li>アフターサービス</li>
+    </ul>
+  </section>
 
-<section id="properties">
-  <h2>おすすめ物件</h2>
-  <p>※ここに最新物件の情報をスライダーやカードで表示可能（要JS）</p>
-</section>
+  <section class="cta">
+    <h3>今すぐ無料相談を申し込む</h3>
+    <a href="#contact">お問い合わせフォームへ</a>
+  </section>
 
-<section id="contact">
-  <h2>無料相談・お問い合わせ</h2>
-  <form>
-    <label>お名前：<br><input type="text" name="name" required></label><br><br>
-    <label>電話番号：<br><input type="tel" name="phone" required></label><br><br>
-    <label>ご希望条件：<br><textarea name="message" rows="5"></textarea></label><br><br>
-    <button type="submit" class="btn">送信する</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2025 〇〇不動産株式会社 | 東京都知事(2)第123456号</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2025 〇〇不動産. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
